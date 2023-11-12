@@ -21,7 +21,7 @@ public class OneToOneMappingApplication {
 
 	@Bean
 	CommandLineRunner commandLineRunner(AppDAO appDAO) {
-		return runner -> this.deleteInstructorById(appDAO);
+		return runner -> this.createInstructor(appDAO);
 	}
 
 	public void updateCourse(AppDAO appDAO) {
